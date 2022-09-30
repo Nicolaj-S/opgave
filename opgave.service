@@ -1,0 +1,11 @@
+[Unit]
+Desrciption= Binary clock
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/bin/python /home/NS/opgave/opgave.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
